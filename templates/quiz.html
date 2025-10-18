@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+
+{% block title %}Question {{ question_id }} - Halloween Quiz{% endblock %}
+
+{% block content %}
+<div class="quiz-section">
+    <h2>Question {{ question_id }}</h2>
+    
+    {% if already_answered %}
+    <div class="alert alert-info">
+        <p>⚠️ Vous avez déjà répondu à cette question!</p>
+        <a href="{{ url_for('index') }}" class="button">Retour à l'accueil</a>
+        <a href="{{ url_for('leaderboard') }}" class="button">Voir le classement</a>
+    </div>
+    {% else %}
+    <div class="question-card">
+        <p class="question-text">{{ question }}</p>
+        
+        <form id="quiz-form">
+            <div class="form-group">
+                <label for="player-name">Votre nom:</label>
+                <input type="text" id="player-name" name="player-name" required placeholder="Entrez votre nom">
+            </div>
+            
+            <div class="choices">
+                {% for choice in choices %}
+                <label class="choice-label">
+                    <input type="radio" name="answer" value="{{ choice }}" required>
+                    <span>{{ choice }}</span>
+                </label>
+                {% endfor %}
+            </div>
+            
+            <button type="submit" class="button submit-button">Valider ma réponse</button>
+        </form>
+        
+        <div id="result" class="result hidden"></div>
+    </div>
+    {% endif %}
+</div>
+
+<script>
+document.getElementById('quiz-form').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    
+    const playerName = document.getElementById('player-name').value;
+    const selectedAnswer = document.querySelector('input[name="answer"]:checked');
+    
+    if (!selectedAnswer) {
+        alert('Veuillez sélectionner une réponse!');
+        return;
+    }
+    
+    const response = await fetch('/submit', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            question_id: {{ question_id }},
+            answer: selectedAnswer.value,
+            player_name: playerName
+        })
+    });
+    
+    const data = await response.json();
+    const resultDiv = document.getElementById('result');
+    
+    if (data.success) {
+        resultDiv.className = 'result ' + (data.correct ? 'correct' : 'incorrect');
+        resultDiv.innerHTML = `
+            <p>${data.message}</p>
+            <a href="{{ url_for('index') }}" class="button">Retour à l'accueil</a>
+            <a href="{{ url_for('leaderboard') }}" class="button">Voir le classement</a>
+        `;
+        resultDiv.classList.remove('hidden');
+        
+        // Cacher le formulaire
+        document.getElementById('quiz-form').style.display = 'none';
+    } else {
+        alert(data.message);
+    }
+});
+</script>
+{% endblock %}

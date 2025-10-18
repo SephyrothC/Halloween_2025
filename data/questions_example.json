@@ -1,0 +1,102 @@
+{
+  "1": {
+    "question": "Quelle est la signification originale du mot 'Halloween' ?",
+    "choices": [
+      "All Hallows' Eve (Veille de la Toussaint)",
+      "Happy October Evening",
+      "Harvest All Evening",
+      "Holy Angels' Event"
+    ],
+    "correct": "All Hallows' Eve (Veille de la Toussaint)"
+  },
+  "2": {
+    "question": "Dans quel pays Halloween a-t-il ses origines ?",
+    "choices": [
+      "États-Unis",
+      "Irlande",
+      "Angleterre",
+      "France"
+    ],
+    "correct": "Irlande"
+  },
+  "3": {
+    "question": "Quelle créature est considérée comme un symbole classique d'Halloween ?",
+    "choices": [
+      "Le loup-garou",
+      "Le vampire",
+      "La sorcière",
+      "Toutes ces réponses"
+    ],
+    "correct": "Toutes ces réponses"
+  },
+  "4": {
+    "question": "Quel légume était traditionnellement utilisé pour fabriquer des lanternes avant les citrouilles ?",
+    "choices": [
+      "La pomme de terre",
+      "Le navet",
+      "La betterave",
+      "Le chou"
+    ],
+    "correct": "Le navet"
+  },
+  "5": {
+    "question": "Que signifie 'Trick or Treat' en français ?",
+    "choices": [
+      "Farce ou friandise",
+      "Bonbon ou bêtise",
+      "Des bonbons ou un sort",
+      "Joyeux Halloween"
+    ],
+    "correct": "Des bonbons ou un sort"
+  },
+  "6": {
+    "question": "Dans quelle période de l'année Halloween est-il célébré ?",
+    "choices": [
+      "31 octobre",
+      "1er novembre",
+      "30 octobre",
+      "Le dernier samedi d'octobre"
+    ],
+    "correct": "31 octobre"
+  },
+  "7": {
+    "question": "Quelle est la couleur traditionnelle associée à Halloween ?",
+    "choices": [
+      "Orange et noir",
+      "Rouge et noir",
+      "Violet et vert",
+      "Blanc et noir"
+    ],
+    "correct": "Orange et noir"
+  },
+  "8": {
+    "question": "Quel film d'horreur classique se déroule pendant la nuit d'Halloween ?",
+    "choices": [
+      "Vendredi 13",
+      "Halloween (de John Carpenter)",
+      "L'Exorciste",
+      "Psychose"
+    ],
+    "correct": "Halloween (de John Carpenter)"
+  },
+  "9": {
+    "question": "Quelle fête celtique est à l'origine d'Halloween ?",
+    "choices": [
+      "Beltane",
+      "Samhain",
+      "Imbolc",
+      "Lughnasadh"
+    ],
+    "correct": "Samhain"
+  },
+  "10": {
+    "question": "Quelle activité traditionnelle consiste à attraper des fruits dans l'eau avec la bouche ?",
+    "choices": [
+      "Le bobbing pour pommes",
+      "La chasse aux bonbons",
+      "Le jeu de la citrouille",
+      "La course aux fruits"
+    ],
+    "correct": "Le bobbing pour pommes"
+  }
+}

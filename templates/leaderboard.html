@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block title %}Leaderboard - Halloween Quiz{% endblock %}
+
+{% block content %}
+<div class="leaderboard-section">
+    <h2>🏆 Classement des Joueurs 🏆</h2>
+    
+    {% if scores %}
+    <div class="leaderboard-table">
+        <table>
+            <thead>
+                <tr>
+                    <th>Rang</th>
+                    <th>Nom</th>
+                    <th>Score</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for player in scores %}
+                <tr class="{% if loop.index == 1 %}rank-1{% elif loop.index == 2 %}rank-2{% elif loop.index == 3 %}rank-3{% endif %}">
+                    <td class="rank">
+                        {% if loop.index == 1 %}🥇
+                        {% elif loop.index == 2 %}🥈
+                        {% elif loop.index == 3 %}🥉
+                        {% else %}{{ loop.index }}
+                        {% endif %}
+                    </td>
+                    <td class="player-name">{{ player.name }}</td>
+                    <td class="score">{{ player.score }} pt{{ 's' if player.score > 1 else '' }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    {% else %}
+    <div class="no-scores">
+        <p>Aucun joueur pour le moment. Soyez le premier à répondre!</p>
+    </div>
+    {% endif %}
+    
+    <div class="leaderboard-actions">
+        <a href="{{ url_for('index') }}" class="button">Retour à l'accueil</a>
+        <button onclick="location.reload()" class="button">Actualiser</button>
+    </div>
+</div>
+
+<script>
+// Auto-refresh toutes les 30 secondes
+setTimeout(function() {
+    location.reload();
+}, 30000);
+</script>
+{% endblock %}

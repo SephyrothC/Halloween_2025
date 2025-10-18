@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}Accueil - Halloween Quiz{% endblock %}
+
+{% block content %}
+<div class="welcome-section">
+    <h2>Bienvenue au Quiz d'Halloween! 🎃</h2>
+    <div class="welcome-text">
+        <p>Scannez les QR codes cachés dans l'appartement pour découvrir les questions!</p>
+        <p>Chaque bonne réponse vous rapporte <strong>1 point</strong>.</p>
+        <p>Entrez votre nom et montrez vos connaissances sur Halloween!</p>
+    </div>
+    
+    <div class="info-cards">
+        <div class="info-card">
+            <h3>📱 Comment jouer?</h3>
+            <ol>
+                <li>Trouvez un QR code</li>
+                <li>Scannez-le avec votre téléphone</li>
+                <li>Répondez à la question</li>
+                <li>Gagnez des points!</li>
+            </ol>
+        </div>
+        
+        <div class="info-card">
+            <h3>🏆 Leaderboard</h3>
+            <p>Consultez le classement pour voir qui est en tête!</p>
+            <a href="{{ url_for('leaderboard') }}" class="button">Voir le classement</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

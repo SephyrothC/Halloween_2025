@@ -1,0 +1,36 @@
+# Fichiers Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Environnements virtuels
+venv/
+env/
+ENV/
+
+# Flask
+instance/
+.webassets-cache
+
+# Fichiers de données (sauf examples)
+data/questions.json
+data/scores.json
+
+# QR codes générés
+qr_codes/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+*.log
+.venv
