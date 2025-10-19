@@ -1,5 +1,6 @@
 {
-  "1": {
+  
+  "e7a1c2b2-1f3a-4b8a-9c2e-1a2b3c4d5e6f": {
     "question": "Quelle est la signification originale du mot 'Halloween' ?",
     "choices": [
       "All Hallows' Eve (Veille de la Toussaint)",
@@ -9,7 +10,7 @@
     ],
     "correct": "All Hallows' Eve (Veille de la Toussaint)"
   },
-  "2": {
+  "a3b2c1d4-5e6f-7a8b-9c0d-1e2f3a4b5c6d": {
     "question": "Dans quel pays Halloween a-t-il ses origines ?",
     "choices": [
       "États-Unis",
@@ -19,7 +20,7 @@
     ],
     "correct": "Irlande"
   },
-  "3": {
+  "f1e2d3c4-b5a6-7890-1234-56789abcdef0": {
     "question": "Quelle créature est considérée comme un symbole classique d'Halloween ?",
     "choices": [
       "Le loup-garou",
@@ -29,7 +30,7 @@
     ],
     "correct": "Toutes ces réponses"
   },
-  "4": {
+  "c0ffee12-3456-7890-abcd-ef1234567890": {
     "question": "Quel légume était traditionnellement utilisé pour fabriquer des lanternes avant les citrouilles ?",
     "choices": [
       "La pomme de terre",
@@ -39,7 +40,7 @@
     ],
     "correct": "Le navet"
   },
-  "5": {
+  "deadbeef-1234-5678-90ab-cdef12345678": {
     "question": "Que signifie 'Trick or Treat' en français ?",
     "choices": [
       "Farce ou friandise",
@@ -49,7 +50,7 @@
     ],
     "correct": "Des bonbons ou un sort"
   },
-  "6": {
+  "beadface-9876-5432-10fe-dcba98765432": {
     "question": "Dans quelle période de l'année Halloween est-il célébré ?",
     "choices": [
       "31 octobre",
@@ -59,7 +60,7 @@
     ],
     "correct": "31 octobre"
   },
-  "7": {
+  "badc0ffe-1111-2222-3333-444455556666": {
     "question": "Quelle est la couleur traditionnelle associée à Halloween ?",
     "choices": [
       "Orange et noir",
@@ -69,7 +70,7 @@
     ],
     "correct": "Orange et noir"
   },
-  "8": {
+  "feed1234-5678-90ab-cdef-1234567890ab": {
     "question": "Quel film d'horreur classique se déroule pendant la nuit d'Halloween ?",
     "choices": [
       "Vendredi 13",
@@ -79,7 +80,7 @@
     ],
     "correct": "Halloween (de John Carpenter)"
   },
-  "9": {
+  "faceb00c-1357-2468-9753-864209753186": {
     "question": "Quelle fête celtique est à l'origine d'Halloween ?",
     "choices": [
       "Beltane",
@@ -89,7 +90,7 @@
     ],
     "correct": "Samhain"
   },
-  "10": {
+  "cafebabe-9999-8888-7777-666655554444": {
     "question": "Quelle activité traditionnelle consiste à attraper des fruits dans l'eau avec la bouche ?",
     "choices": [
       "Le bobbing pour pommes",

@@ -4,7 +4,7 @@ import os
 import json
 
 # Remplacez par l'IP de votre Raspberry Pi
-RASPBERRY_PI_IP = "192.168.1.97"  # À MODIFIER AVEC L'IP DE VOTRE RASPBERRY PI
+RASPBERRY_PI_IP = "192.168.1.20"  # À MODIFIER AVEC L'IP DE VOTRE RASPBERRY PI
 BASE_URL = f"http://{RASPBERRY_PI_IP}:5000/quiz/"
 
 # Charger les questions et leurs UUID
